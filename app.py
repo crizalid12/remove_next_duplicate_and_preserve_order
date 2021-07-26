@@ -12,6 +12,7 @@ def remove_next_duplicate_and_preserve_order(sequence):
         previous_item = current_item
         current_item = next_item
 
-    result_list.append(sequence[-1])
+    if result_list[-1] != sequence[-1]:
+        result_list.append(sequence[-1])
         
     return result_list
